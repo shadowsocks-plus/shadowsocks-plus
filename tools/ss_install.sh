@@ -25,7 +25,7 @@ fi
 
 # Download user manager
 if ! test -e /usr/bin/loadUserDatabase; then
-    curl -s -k -o /usr/bin/loadUserDatabase "https://raw.githubusercontent.com/jm33-m0/gfw_scripts/master/userManager/loadUserDatabase" && chmod 755 /usr/bin/loadUserDatabase
+    curl -s -k -o /usr/bin/loadUserDatabase "https://github.com/jm33-m0/gfw_scripts/raw/master/ssplus/loadUserDatabase" && chmod 755 /usr/bin/loadUserDatabase
 fi
 
 # Download ssp-server and install it to /usr/bin
@@ -43,7 +43,7 @@ fi
 # Download ss_add_api.sh to add first Shadowsocks-Plus user and launch a base ssp instance with HTTP API
 echo '[*] Lets create our first Shadowsocks user account
 '
-url="https://raw.githubusercontent.com/jm33-m0/gfw_scripts/master/ss_add_api.sh"
+url="https://raw.githubusercontent.com/jm33-m0/gfw_scripts/master/ssplus/ss_add_api.sh"
 if ! test -e ./ss_add_api.sh; then
     curl -s -k -o ss_add_api.sh $url && chmod 755 ss_add_api.sh
 fi
